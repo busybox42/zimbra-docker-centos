@@ -135,7 +135,7 @@ EOF
 ##Install the Zimbra Collaboration ##
 
 echo "Downloading Zimbra Collaboration 8.8.10"
-wget -O /opt/zimbra-install/zimbra.tar.gz https://files.zimbra.com/downloads/8.8.10_GA/zcs-8.8.10_GA_3039.RHEL7_64.20180928094617.tgz
+wget -O /opt/zimbra-install/zimbra.tar.gz https://files.zimbra.com/downloads/8.8.11_GA/zcs-8.8.11_GA_3737.RHEL7_64.20181207111719.tgz
 
 echo "Extracting files from the archive"
 tar xzvf /opt/zimbra-install/zimbra.tar.gz -C /opt/zimbra-install/
@@ -150,8 +150,8 @@ echo "Adding ZetAlliance Repository"
 wget https://copr.fedorainfracloud.org/coprs/zetalliance/zimlets/repo/epel-7/zetalliance-zimlets-epel-7.repo -O /etc/yum.repos.d/zetalliance-zimlets-epel-7.repo
 
 echo "Installing zimbra-patch"
-yum clean metadata 
-yum check-update 
+yum clean metadata
+yum check-update
 yum install zimbra-patch -y
 
 echo "Restarting Zimbra"
