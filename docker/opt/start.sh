@@ -135,7 +135,7 @@ EOF
 ##Install the Zimbra Collaboration ##
 
 echo "Downloading Zimbra Collaboration 8.8.12"
-wget -O /opt/zimbra-install/zimbra.tar.gz https://files.zimbra.com/downloads/8.8.12_GA/zcs-8.8.12_GA_3794.RHEL6_64.20190329045002.tgz
+wget -O /opt/zimbra-install/zimbra.tar.gz https://files.zimbra.com/downloads/8.8.12_GA/zcs-8.8.12_GA_3794.RHEL7_64.20190329045002.tgz
 
 echo "Extracting files from the archive"
 tar xzvf /opt/zimbra-install/zimbra.tar.gz -C /opt/zimbra-install/
